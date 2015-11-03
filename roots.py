@@ -16,8 +16,12 @@ def sqrt(x):
 
 
 def main():
-    print(sqrt(9))
-    print(sqrt(2))
+    try:
+        print(sqrt(9))
+        print(sqrt(2))
+        print(sqrt(-1))
+    except ZeroDivisionError:
+        print("Cannot compute square root of a negative number.")
 
 
 if __name__ == '__main__':
